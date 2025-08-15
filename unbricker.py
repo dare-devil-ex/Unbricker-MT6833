@@ -1,11 +1,15 @@
 # Authour: dare_devil_ex
 
-import os
-from time import sleep as t
-import subprocess
-from mtkclient.Library.dare_devil_ex.downloader import downloader as dl
-from mtkclient.Library.dare_devil_ex.wkaieUnzipper import Wkaie as FHandler
-
+try:
+    import pyfiglet
+    import os
+    from time import sleep as t
+    import subprocess
+    from mtkclient.Library.dare_devil_ex.downloader import downloader as dl
+    from mtkclient.Library.dare_devil_ex.wkaieUnzipper import Wkaie as FHandler
+except:
+    os.system("pip install pyfiglet")
+    
 if os.path.exists("input-images"):
     pass
 else:
@@ -13,8 +17,9 @@ else:
 path = "./input-images"
 requirements = ['boot.img', 'dpm.img', 'dtbo.img', 'gz.img', 'lk.img', 'logo.img', 'mcupm.img', 'md1img.img', 'pi_img.img', 'scp.img', 'spmfw.img', 'sspm.img', 'tee.img', 'vbmeta.img', 'vbmeta_system.img', 'vbmeta_vendor.img']
 
-
-
+from pyfiglet import Figlet
+f = Figlet(font='slant')
+print(f.renderText('unbricker'))
 print("""Pick your board
 1. Evergo
 2. Evergreen
