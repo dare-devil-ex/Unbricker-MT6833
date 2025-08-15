@@ -6,6 +6,10 @@ import subprocess
 from mtkclient.Library.dare_devil_ex.downloader import downloader as dl
 from mtkclient.Library.dare_devil_ex.wkaieUnzipper import Wkaie as FHandler
 
+if os.path.exists("input-images"):
+    pass
+else:
+    os.mkdir("input-images")
 path = "./input-images"
 requirements = ['boot.img', 'dpm.img', 'dtbo.img', 'gz.img', 'lk.img', 'logo.img', 'mcupm.img', 'md1img.img', 'pi_img.img', 'scp.img', 'spmfw.img', 'sspm.img', 'tee.img', 'vbmeta.img', 'vbmeta_system.img', 'vbmeta_vendor.img']
 
