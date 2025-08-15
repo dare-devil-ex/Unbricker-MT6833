@@ -9,7 +9,7 @@
 
 ## Notice
 
-> This tool didn't tested yet and It's might seems beginner friendly but actually I prefer manual unbrick cuz it's not TESTED YET
+> This tool didn't tested yet and It's might seems beginner friendly but actually I prefer manual unbrick cuz it's not **TESTED YET**
 
 ## Author
 - @dare-devil-ex
